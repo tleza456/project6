@@ -264,7 +264,7 @@ const Post = (props) => {
                     <td>
                       <img
                         src={`${config.serverRoot}/${post.thumbnail}`}
-                        width="64"
+                        width="100"
                         alt={post.name}
                       />
                     </td>
