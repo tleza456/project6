@@ -84,8 +84,9 @@ const AdminMaster = () => {
               <img src="https://via.placeholder.com/150x150" />
             </div>
             <div className="pl-3">
-              <h1 className="display-3">ระบบหลังบ้าน</h1>
-              <p>v1.0.0</p>
+              <h1 className="display-5">ระบบหลังบ้าน</h1>
+              <p>V.I.P</p>
+              
             </div>
           </div>
         </Jumbotron>
@@ -108,7 +109,7 @@ const AdminMaster = () => {
                   <NavLink href="/admin/user">ผู้ใช้งาน</NavLink>
                 </NavItem>
               </Nav>
-              <NavbarText>สวัสดีคุณ, {me.name}</NavbarText>
+              <NavbarText>สวัสดี, คุณ{me.name}</NavbarText>
               <Nav>
                 <NavItem>
                   <Button
@@ -132,13 +133,14 @@ const AdminMaster = () => {
             />
             <Route path="/admin/post" render={(props) => <Post {...props} />} />
             <Route path="/admin/user" render={(props) => <User {...props} />} />
+            
             <Route
               path="/admin/category"
               render={(props) => <Category {...props} />}
             />
           </Switch>
         </div>
-        &copy; 2021 Mywebsite
+        &copy;2021 Mywebsideline
       </Container>
     </div>
   );

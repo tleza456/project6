@@ -44,7 +44,7 @@ const banner = (props) => {
 
   const fetchUser = async () => {
     try {
-      const response = await axios.get(`${config.server}/user`, {
+      const response = await axios.get(`${config.server}/banner`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -65,8 +65,8 @@ const banner = (props) => {
       e.preventDefault();
       const response = await axios.post(
         !isEdit
-          ? `${config.server}/user/store`
-          : `${config.server}/user/update/${input.id}`,
+          ? `${config.server}/banner/store`
+          : `${config.server}/banner/update/${input.id}`,
         { ...input },
         {
           headers: {
