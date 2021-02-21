@@ -108,7 +108,7 @@ const AdminMaster = () => {
                   <NavLink href="/admin/user">ผู้ใช้งาน</NavLink>
                 </NavItem>
               </Nav>
-              <NavbarText>สวัสดี, {me.name}</NavbarText>
+              <NavbarText>สวัสดีคุณ, {me.name}</NavbarText>
               <Nav>
                 <NavItem>
                   <Button
